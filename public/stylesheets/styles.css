@@ -1,7 +1,30 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home img {
+    height: 50vh;
+    object-fit: contain;
+    margin: 20px;
+}
+
+#home button {
+    margin: 10px;
+}
+
+.tagline {
+    color: #bfbfbf;
+}
 /*
 white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
-grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
 */

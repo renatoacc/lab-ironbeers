@@ -1,11 +1,11 @@
-<div class="container">
+<div>
     <h1>Your Random Beer</h1>
     <div>
-        <img src="{{randBeer.image_url}}" alt="Picture of {{randBeer.name}}" />
-        {{randBeer.name}}
-        {{randBeer.description}}
-        {{randBeer.tagline}}
-        {{randBeer.food_pairing}}
-        {{randBeer.brewers_tips}}
+        {{#with randBeer}}
+        {{> beerInfo}}
+        {{/with}}
+          
+        <p>{{randBeer.food_pairing}}</p>
+        <p>{{randBeer.brewers_tips}}</p>
     </div>
 </div>
