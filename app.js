@@ -3,7 +3,7 @@ const express = require('express');
 const hbs = require('hbs');
 const path = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
-
+const port = process.env.PORT || 3000;
 const app = express();
 const punkAPI = new PunkAPIWrapper();
 
@@ -34,7 +34,7 @@ app.get('/random-beer', async (req, res) => {
   res.render('random-beer', { randBeer });
 });
 
-app.listen(3000, () => console.log('🏃‍ on port 3000'));
+app.listen(port, () => console.log('🏃‍ on port', port));
 
 // PROMISE VERSION
 /* 
